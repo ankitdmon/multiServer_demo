@@ -26,7 +26,7 @@ export const createPost = async (req: Request, res: Response) => {
 
 export const getAllPosts = async (req: Request, res: Response) => {
   try {
-    return "All Posts!!";
+    res.status(201).send(Posts);
   } catch (err) {
     console.log(err);
     return err;
