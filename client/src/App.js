@@ -1,11 +1,14 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import CreatePost from "./components/createPost";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello React</h1>
+    <div>
+      <h1>Create Post</h1>
+      <CreatePost />
     </div>
   );
-}
+};
 
 export default App;
