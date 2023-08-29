@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import URL from "../api";
+import { POST_API_URL } from "../api";
 
 const CreatePost = () => {
   const [title, setTitle] = useState("");
@@ -8,7 +8,7 @@ const CreatePost = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
     try {
-      await axios.post(`${URL}/createPost`, {
+      await axios.post(`${POST_API_URL}/createPost`, {
         title,
       });
       setTitle("");
