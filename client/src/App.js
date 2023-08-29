@@ -4,7 +4,7 @@ import CreatePost from "./components/createPost";
 
 const App = () => {
   return (
-    <div>
+    <div className="container">
       <h1>Create Post</h1>
       <CreatePost />
     </div>
