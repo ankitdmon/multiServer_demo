@@ -13,5 +13,5 @@ app.use(bodyParser.json());
 app.use("/", router);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on PORT:${PORT}`);
+  console.log(`Comment server is running on PORT:${PORT}`);
 });

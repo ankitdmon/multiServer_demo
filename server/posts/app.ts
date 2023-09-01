@@ -13,5 +13,5 @@ app.use(bodyParser.json());
 app.use("/", routes);
 
 app.listen(PORT, () => {
-  console.log(`Server is running on PORT: ${PORT}`);
+  console.log(`Post server is running on PORT: ${PORT}`);
 });
