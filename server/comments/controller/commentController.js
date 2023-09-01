@@ -12,7 +12,7 @@ exports.createComment = async (req, res) => {
     comments.push({ id: commentId, content });
     commentsByPostId[req.params.postId] = comments;
 
-    axios.post(broker_URL, {
+    await axios.post(broker_URL, {
       type: "Comment Creted",
       data: {
         id: commentId,
