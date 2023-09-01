@@ -4,7 +4,7 @@ import events from "./event";
 const app = express();
 
 app.use("/post", posts);
-app.use("/events", events);
+// app.use("/events", events);
 
 export default app;
 

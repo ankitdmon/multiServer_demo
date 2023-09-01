@@ -11,7 +11,7 @@ app.post("/events", (req, res) => {
     const event = req.body;
     axios.post('http://localhost:9090/events');  // For post service
     axios.post('http://localhost:8080/events');  // For comment service
-    // axios.post('http://localhost:1010/events');  // for query service
+    axios.post('http://localhost:1010/events');  // for query service
 })
 
 app.listen(PORT, ()=>{

@@ -15,7 +15,7 @@ app.use("/", router);
 // event bus reciever
 
 app.post("/events", (req, res) => {
-  console.log("Event Recieved!", req, body.type);
+  console.log("Event Recieved!", req.body.type);
   req.setEncoding({});
 });
 
